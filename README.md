@@ -38,7 +38,7 @@ sudo apt-get install git-lfs
 git lfs install
 
 # 下载模型到models文件夹下
-git clone https://www.modelscope.cn/iic/SenseVoiceSmall.git models/
+git clone https://www.modelscope.cn/iic/SenseVoiceSmall.git models/SenseVoiceSmall
 ```
 
 ### Step 3: Run the Setup Script
@@ -70,3 +70,6 @@ source .venv/bin/activate
 # Run the main.py script
 python main.py
 ```
+
+## 示例图
+<img src="./test1.png">

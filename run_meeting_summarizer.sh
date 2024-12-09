@@ -27,7 +27,7 @@ pip install --upgrade pip
 
 # Step 5: Install Python dependencies
 echo "Installing required Python dependencies (requests, gradio)..."
-pip install requests gradio torch torchaudio
+pip install requests gradio torch torchaudio funasr
 
 # Step 6: Install FFmpeg if not installed
 if ! command -v ffmpeg &>/dev/null; then

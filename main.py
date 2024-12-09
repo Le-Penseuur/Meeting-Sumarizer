@@ -64,7 +64,8 @@ def summarize_with_model(llm_model_name: str, context: str, text: str) -> str:
     
     {text}
     
-    Please summarize the transcript in chinese.并进行适当的分段"""
+    Please summarize the transcript in chinese.
+    并以谈话内容的主题为依据进行分段"""
 
     headers = {"Content-Type": "application/json"}
     data = {"model": llm_model_name, "prompt": prompt}
