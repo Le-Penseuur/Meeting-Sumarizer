@@ -29,7 +29,19 @@ git clone https://github.com/AlexisBalayre/AI-Powered-Meeting-Summarizer
 cd AI-Powered-Meeting-Summarizer
 ```
 
-### Step 2: Run the Setup Script
+### Step 2: Install SenseVoiceSmall
+
+```bash
+# 确保lfs已安装
+sudo apt-get install git-lfs
+
+git lfs install
+
+# 下载模型到models文件夹下
+git clone https://www.modelscope.cn/iic/SenseVoiceSmall.git models/
+```
+
+### Step 3: Run the Setup Script
 
 To install all necessary dependencies (including Python virtual environment, `whisper.cpp`, FFmpeg, and Python packages), and to run the application, execute the provided setup script:
 
@@ -45,7 +57,7 @@ This script will:
 - Check if `FFmpeg` is installed and install it if missing.
 - **Run the `main.py` script**, which will start the Gradio interface for the application.
 
-### Step 3: Accessing the Application
+### Step 4: Accessing the Application
 
 Once the setup and execution are complete, Gradio will provide a URL (typically `http://127.0.0.1:7860`). Open this URL in your web browser to access the Meeting Summarizer interface.
 
