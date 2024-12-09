@@ -22,11 +22,11 @@ ollama run qwen2.5:1.5b
 
 Follow the steps below to set up and run the application:
 
-### Step 1: Clone the Repository and Download SenseVoiceSmall Model
+### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/AlexisBalayre/AI-Powered-Meeting-Summarizer
-cd AI-Powered-Meeting-Summarizer
+git clone https://github.com/Le-Penseuur/Meeting-Sumarizer.git
+cd Meeting-Sumarizer
 ```
 
 ### Step 2: Install SenseVoiceSmall
