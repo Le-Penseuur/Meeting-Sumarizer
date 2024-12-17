@@ -56,16 +56,22 @@ def summarize_with_model(llm_model_name: str, context: str, text: str) -> str:
     Returns:
         str: The generated summary text from the model.
     """
-    prompt = f"""You are given a transcript from a meeting, along with some optional context.
+    prompt = f"""你将被提供了一份会议记录，以及一些可选的背景信息。
     
-    Context: {context if context else 'No additional context provided.'}
+          背景信息如下: {context if context else 'No additional context provided.'}
     
-    The transcript is as follows:
+         会议记录如下:
     
     {text}
     
-    Please summarize the transcript in chinese.
-    并以谈话内容的主题为依据进行分段"""
+         请用中文对上述文本进行总结，总结结构如下：
+         一、摘要
+         xxx
+         二 、纪要
+         1.xx
+         2.xx
+         3.xx
+    """
 
     headers = {"Content-Type": "application/json"}
     data = {"model": llm_model_name, "prompt": prompt}
